@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}Privacy Policy — Spendly{% endblock %}
+
+{% block content %}
+<div class="privacy-container" style="max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6; font-family: 'DM Sans', sans-serif; color: #333;">
+    <h1 style="font-family: 'DM Serif Display', serif; font-size: 2.5rem; margin-bottom: 20px;">Privacy Policy</h1>
+    <p style="margin-bottom: 20px;">Last Updated: September 11, 2026</p>
+
+    <section style="margin-bottom: 30px;">
+        <h2 style="font-family: 'DM Serif Display', serif; font-size: 1.8rem; margin-bottom: 10px;">1. Data We Collect</h2>
+        <p>Spendly collects the information you provide directly to us, including your email address for account registration and any financial data (expenses, categories, amounts) that you manually log into the application.</p>
+    </section>
+
+    <section style="margin-bottom: 30px;">
+        <h2 style="font-family: 'DM Serif Display', serif; font-size: 1.8rem; margin-bottom: 10px;">2. How We Use Your Data</h2>
+        <p>We use your data solely to provide you with personal expense tracking services, including generating spending summaries, category breakdowns, and managing your user account. We do not sell your personal or financial data to third parties.</p>
+    </section>
+
+    <section style="margin-bottom: 30px;">
+        <h2 style="font-family: 'DM Serif Display', serif; font-size: 1.8rem; margin-bottom: 10px;">3. Data Storage</h2>
+        <p>Your data is stored securely in our database. We implement reasonable administrative and technical measures to protect your information. However, you acknowledge that no electronic transmission or storage method is entirely secure.</p>
+    </section>
+
+    <section style="margin-bottom: 30px;">
+        <h2 style="font-family: 'DM Serif Display', serif; font-size: 1.8rem; margin-bottom: 10px;">4. Third Party Services</h2>
+        <p>Spendly does not currently share your data with any third-party services. If we implement third-party integrations in the future, we will update this policy and notify you accordingly.</p>
+    </section>
+
+    <section style="margin-bottom: 30px;">
+        <h2 style="font-family: 'DM Serif Display', serif; font-size: 1.8rem; margin-bottom: 10px;">5. Contact Us</h2>
+        <p>If you have any questions about this Privacy Policy or how your data is handled, please contact us at <strong>support@spendly.example</strong>.</p>
+    </section>
+
+    <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee;">
+        <a href="{{ url_for('landing') }}" style="color: #666; text-decoration: none;">&larr; Back to Home</a>
+    </div>
+</div>
+{% endblock %}
